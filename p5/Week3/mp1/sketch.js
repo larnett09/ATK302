@@ -175,5 +175,5 @@ function draw() {
   print(mouseIsPressed);
 
   //console for mouse position
-  text(mouseX + ",  " + mouseY, mouseX + 10, mouseY + 10);
+  //text(mouseX + ",  " + mouseY, mouseX + 10, mouseY + 10);
 }
