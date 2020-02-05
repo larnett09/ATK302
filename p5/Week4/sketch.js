@@ -1,10 +1,10 @@
-var img1;
+var tsurudapic ;
 
 function setup() {
-  createCanvas(800, 800);
-  img1 = loadImage("assets/atk302tsuruda.jpg");
+  createCanvas(800, 800) ;
+  tsurudapic = loadImage("Week4/assets/atk302tsuruda.jpg") ;
 }
 
 function draw() {
-  image(img1, 20, 100);
+  image(tsurudapic, 20, 100) ;
 }
