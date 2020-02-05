@@ -1,7 +1,7 @@
 var tsurudapic;
 
 function preload() {
-  tsurudapic = loadImage("assets/atk302tsuruda.jpg");
+  tsurudapic = loadImage("images/atk302tsuruda.jpg");
 }
 
 function setup() {
