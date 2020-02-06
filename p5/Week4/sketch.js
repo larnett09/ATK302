@@ -8,7 +8,6 @@ var flumefont;
 //var flumesong;
 //var epromsong;
 
-//function preload() {}
 
 function setup() {
   createCanvas(1200, 1200);
@@ -44,3 +43,12 @@ function draw() {
   textFont(flumefont, 40); // SETS the font
   text("FLUME", 220, 750); // DISPLAYS TEXT WITH THE FONT
 }
+
+//function mouseReleased()
+//if (song1.isplaying())
+//song1.pause();
+//} else {
+// song1.play();
+//}
+//}
+//
