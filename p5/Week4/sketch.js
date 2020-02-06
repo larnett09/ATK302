@@ -23,7 +23,7 @@ function draw() {
 
  fill('#ffffff');   // SETS the color
  textFont(tsurudafont, 40);  // SETS the font
- text("TSURUDA", 20, 320); // DISPLAYS TEXT WITH THE FONT
+ text("TSURUDA", 20, 350); // DISPLAYS TEXT WITH THE FONT
 
  fill('#ffffff');   // SETS the color
  textFont(epromfont, 40);  // SETS the font
