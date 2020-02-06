@@ -4,9 +4,9 @@ var eprompic;
 var tsurudafont;
 var epromfont;
 var flumefont;
-var tsurudasong;
-var flumesong;
-var epromsong;
+//var tsurudasong;
+//var flumesong;
+//var epromsong;
 
 //function preload() {}
 
