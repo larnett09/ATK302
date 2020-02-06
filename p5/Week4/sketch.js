@@ -3,6 +3,7 @@ var flumepic;
 var eprompic;
 var tsurudafont;
 var epromfont;
+var flumefont;
 
 //function preload() {}
 
@@ -14,6 +15,7 @@ function setup() {
   eprompic = loadImage("assets/atk302eprom.jpg");
   tsurudafont = loadFont("assets/tsurudaf.ttf");
   epromfont = loadFont("assets/epromf.ttf");
+  flumefont = loadFont("assets/flumef.ttf");
 }
 
 function draw() {
@@ -27,7 +29,11 @@ function draw() {
 
  fill('#ffffff');   // SETS the color
  textFont(epromfont, 40);  // SETS the font
- text("EPROM", 620, 520); // DISPLAYS TEXT WITH THE FONT
+ text("EPROM", 620, 550); // DISPLAYS TEXT WITH THE FONT
+
+ fill('#ffffff');   // SETS the color
+ textFont(flumefont, 40);  // SETS the font
+ text("FLUME", 220, 750); // DISPLAYS TEXT WITH THE FONT
 }
 
 //}
