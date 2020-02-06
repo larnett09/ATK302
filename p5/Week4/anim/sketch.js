@@ -12,7 +12,7 @@ function draw() {
   plane();
 }
 
-Function fish() {
+function plane(); {
   //line(400, 300, 200, 100);
   //line(400, 300, 200, 200);
   line(400, 300, 200, 300);
@@ -50,14 +50,12 @@ Function fish() {
   triangle(175, 250, 150, 200, 175, 200);
   triangle(625, 250, 650, 200, 625, 200);
 
-
   //triangles for the wings
   fill(64, 64, 64)
   triangle(75, 100, 375, 450, 380, 200)
   triangle(725, 100, 425, 450, 420, 200)
   triangle(395, 105, 350, 75, 385, 170)
   triangle(450, 75, 415, 170, 405, 105)
-
 
   //ellipses
   ellipseMode(CENTER); // Set ellipseMode is CORNER
