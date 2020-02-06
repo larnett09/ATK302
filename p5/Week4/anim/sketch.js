@@ -12,7 +12,7 @@ function draw() {
   plane();
 }
 
-function plane(); {
+function plane() {
   //line(400, 300, 200, 100);
   //line(400, 300, 200, 200);
   line(400, 300, 200, 300);
