@@ -1,5 +1,5 @@
 function setup() {
-  creatCanvas(800, 800)
+  createCanvas(800, 800)
   rectMode(CENTER)
   background(100)
   // put setup code here
