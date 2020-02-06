@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  image(tsurudapic, 10, 10);
-  image(flumepic, 210, 210);
-  image(eprompic, 410, 410);
+  image(tsurudapic, 10, 10, 100, 100);
+  image(flumepic, 210, 210, 100, 100);
+  image(eprompic, 410, 410, 100, 100);
 }
