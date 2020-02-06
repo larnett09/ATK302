@@ -4,10 +4,14 @@ var eprompic;
 var tsurudafont;
 var epromfont;
 var flumefont;
-var tsurudasong;
-var flumesong;
-var epromsong;
-var slider;
+//var tsurudasong;
+//var flumesong;
+//var epromsong;
+//var slider;
+
+//function preLoad() {
+//  tsurudasong = loadSound("assets/tsurudafubar.mp3");
+//}
 
 function setup() {
   createCanvas(1200, 1200);
@@ -20,16 +24,16 @@ function setup() {
   epromfont = loadFont("assets/epromf.ttf");
   flumefont = loadFont("assets/flumef.ttf");
 
-  tsurudasong = loadSound("assets/tsurudafubar.mp3");
+  //tsurudasong = loadSound("assets/tsurudafubar.mp3");
   //flumesong = loadSound("assets/flumeleftalone.mp3");
   //epromsong = loadSound("assets/epromcenterofvip.mp3");
-  //slider = createSlider(300, 200, 0, 0.010);
+  slider = createSlider(300, 200, 0, 5);
 }
 
-function loaded() {
-  tsurudasong.play();
-  tsurudasong.setVolume(0.5);
-}
+//function loaded() {
+//  tsurudasong.play();
+//  tsurudasong.setVolume(5.5);
+//}
 
 function draw() {
   image(tsurudapic, 10, 10, 300, 300);
