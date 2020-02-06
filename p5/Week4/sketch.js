@@ -24,6 +24,7 @@ function setup() {
   //tsurudasong = loadSong("assets/tsurudafubar.mp3");
   //flumesong = loadSong("assets/flumeleftalone.mp3");
   //epromsong = loadSong("assets/epromcenterofvip.mp3");
+  //flumesong.play();
 }
 
 function draw() {
@@ -42,6 +43,4 @@ function draw() {
   fill('#ffffff'); // SETS the color
   textFont(flumefont, 40); // SETS the font
   text("FLUME", 220, 750); // DISPLAYS TEXT WITH THE FONT
-}
-
 }
