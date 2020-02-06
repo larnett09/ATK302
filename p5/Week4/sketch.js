@@ -44,8 +44,4 @@ function draw() {
   text("FLUME", 220, 750); // DISPLAYS TEXT WITH THE FONT
 }
 
-//}
-
-//console for mouse position
-//text(mouseX + ",  " + mouseY, mouseX + 10, mouseY + 10);
-//}
+}
