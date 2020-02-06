@@ -2,15 +2,13 @@ var tsurudapic;
 var flumepic;
 var eprompic;
 
-function preload() {
-  tsurudapic = loadImage("images/atk302tsuruda.jpg");
-  flumepic = loadImage("images/atk302flume.jpg");
-  eprompic = loadImage("images.atk302eprom.jpg");
-}
+//function preload() {}
 
 function setup() {
   createCanvas(800, 800);
-//  tsurudapic = loadImage("assets/atk302tsuruda.jpg");
+  tsurudapic = loadImage("images/atk302tsuruda.jpg");
+  flumepic = loadImage("images/atk302flume.jpg");
+  eprompic = loadImage("images.atk302eprom.jpg");
 }
 
 function draw() {
