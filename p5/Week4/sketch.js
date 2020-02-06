@@ -2,6 +2,7 @@ var tsurudapic;
 var flumepic;
 var eprompic;
 var tsurudafont;
+var epromfont;
 
 //function preload() {}
 
@@ -12,6 +13,7 @@ function setup() {
   flumepic = loadImage("assets/atk302flume.jpg");
   eprompic = loadImage("assets/atk302eprom.jpg");
   tsurudafont = loadFont("assets/tsurudaf.ttf");
+  epromfont = loadFont("assets/epromf.ttf");
 }
 
 function draw() {
@@ -19,10 +21,13 @@ function draw() {
   image(flumepic, 210, 410, 300, 300);
   image(eprompic, 610, 210, 300, 300);
 
-  fill('#ffffff');   // SETS the color
+ fill('#ffffff');   // SETS the color
  textFont(tsurudafont, 40);  // SETS the font
- textSize();    // SETS the size of the font
  text("TSURUDA", 20, 320); // DISPLAYS TEXT WITH THE FONT
+
+ fill('#ffffff');   // SETS the color
+ textFont(epromfont, 40);  // SETS the font
+ text("EPROM", 620, 520); // DISPLAYS TEXT WITH THE FONT
 }
 
 //}
