@@ -4,8 +4,8 @@ var eprompic;
 
 function preload() {
   tsurudapic = loadImage("images/atk302tsuruda.jpg");
-  flumepic = loadImage("images/atk302flume.jpg")
-  eprompic = loadImage("images.atk302eprom.jpg")
+  flumepic = loadImage("images/atk302flume.jpg");
+  eprompic = loadImage("images.atk302eprom.jpg");
 }
 
 function setup() {
