@@ -4,6 +4,9 @@ var eprompic;
 var tsurudafont;
 var epromfont;
 var flumefont;
+var tsurudasong;
+var flumesong;
+var epromsong;
 
 //function preload() {}
 
@@ -13,9 +16,14 @@ function setup() {
   tsurudapic = loadImage("assets/atk302tsuruda.jpg");
   flumepic = loadImage("assets/atk302flume.jpg");
   eprompic = loadImage("assets/atk302eprom.jpg");
+
   tsurudafont = loadFont("assets/tsurudaf.ttf");
   epromfont = loadFont("assets/epromf.ttf");
   flumefont = loadFont("assets/flumef.ttf");
+
+tsurudasong = loadSong("assets/tsurudafubar.mp3");
+flumesong = loadSong("assets/flumeleftalone.mp3");
+epromsong = loadSong("assets/epromcenterofvip.mp3");
 }
 
 function draw() {
