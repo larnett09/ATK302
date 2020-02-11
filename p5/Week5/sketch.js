@@ -18,7 +18,7 @@ switch (myState) {
  case 1:
  background('red') ;
  fill('green')
- text("Tis me state 2 chap") ;
+ text("Tis me state 2 chap", 100, 100) ;
  break ;
 
  case 2:
