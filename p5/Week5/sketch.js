@@ -8,25 +8,28 @@ function setup() {
 
 function draw() {
   // put drawing code here
-switch(myState){
-case 0:
-background('black')
-text("hello state 0!", 100, 100) ;
-break ;
+switch (myState) {
+ case 0:
+ background('black') ;
+ fill('white') ;
+ text("hello state 0!", 100, 100) ;
+ break ;
 
-case 1:
-break ;
+ case 1:
+ background('red') ;
+ fill('green')
+ text("Tis me state 2 chap") ;
+ break ;
 
-case 2:
-break ;
+ case 2:
+ break ;
 
-case 3:
-break ;
+ case 3:
+ break ;
 
-case 4:
-break ;
-}
-
+ case 4:
+ break ;
+ }
 }
 
 function mouseReleased() {
