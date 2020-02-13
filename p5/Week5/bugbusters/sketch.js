@@ -9,7 +9,7 @@ function Setup() {
 function Draw() {
   switch (state) {
     case 0:
-    Background(255, 0, 0);
+    background(255, 0, 0);
     fill('white');
     textSize(100);
     text('case 0', 2, 100);
@@ -31,12 +31,12 @@ function Draw() {
  }
 }
 
-function MouseRelesed() {
+function mouseReleased() {
   // add one to myState
   // if myState got past 2, reset it to 0
-  state++ ;
+  state = state + 1;
 
-  if (state > 3) {
+  if (state > 2) {
       state = 0;
   }
 
