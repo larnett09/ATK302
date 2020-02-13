@@ -8,9 +8,11 @@ function setup() {
 
 function draw() {
   // put drawing code here
+  //textsize(100)
+  //text('timer', width/2, height/2);
   timer-- ;
   if (timer == 0){
     background(random(256), random(256), random(256)) ;
-    timer = 200 ; 
+    timer = 200 ;
   }
 }
