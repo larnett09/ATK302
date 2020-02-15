@@ -34,7 +34,7 @@ function draw() {
 
 function mouseReleased() {
   myState = myState + 1;
-  if (myState < 4) {
+  if (myState > 4) {
     myState = 0;
   }
 }
