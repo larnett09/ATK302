@@ -10,7 +10,7 @@ function draw() {
 
 function mouseReleased() {
   if ((mouseX > 100) && (mouseX < 200) && (mouseY > 100) && (mouseY < 200)) {
-  background(random(255));
+    background(random(255));
 
   }
 }

@@ -7,7 +7,7 @@ function setup() {
 function draw() {
   background('black');
   fill('red')
-  text("Parasite", x, 100) ;
+  text("Parasite", x, 100);
   x = x + 5;
   if (x > width) {
     x = 0;
