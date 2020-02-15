@@ -1,7 +1,7 @@
 function setup() {
   createCanvas(800, 800)
   rectMode(CENTER)
-  background(100)
+  background()
   // put setup code here
 }
 
