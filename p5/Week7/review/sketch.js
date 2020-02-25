@@ -7,6 +7,7 @@ function preload() {
 function setup() {
   // put setup code here
   createCanvas(800, 800);
+
 }
 
 function draw() {
@@ -18,7 +19,7 @@ function draw() {
       break;
 
     case 1:
-      text("Tooth-hurty!", 400, 400)
+      text("Tooth-hurty!", 400, 400);
       break;
 
   }
