@@ -50,7 +50,7 @@ switch(myState) {
   }
 }
 
-function mousReleased() {
+function mouseReleased() {
   myState = myState + 1;
   if (myState > 5){
     myState = 0 ;
@@ -60,7 +60,6 @@ function mousReleased() {
   song2.pause();
   song3.pause();
 
-  getAudioContext().resume();
 }
 
 function touchStarted(){
