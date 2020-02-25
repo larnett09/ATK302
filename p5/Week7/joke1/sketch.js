@@ -12,7 +12,7 @@ function setup() {
 
 function draw() {
   // put drawing code here
-  background('black') ;
+  background('white') ;
   switch (myState) {
     case 0:
       text("What time did the man go to the Dentist?", 400, 400) ;
@@ -25,7 +25,7 @@ function draw() {
   }
 }
 
-function mousReleased() {
+function mouseReleased() {
   myState = myState + 1;
   if (myState > 1) {
     myState = 0;
