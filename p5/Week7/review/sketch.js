@@ -15,7 +15,7 @@ function draw() {
   background('black');
   switch (myState) {
     case 0:
-      text("What time did the man go to the Dentist?")
+      text("What time did the man go to the Dentist?", 400, 400) ;
       break;
 
     case 1:
