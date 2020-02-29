@@ -58,11 +58,11 @@ function draw() {
       ellipse(width / 2, height / 2, 100, 100);
       ellipse(width / 2, height / 2 + 125, 100, 100);
 
-      break;
-      timer--;
+      timer++;
       if (timer > 250) {
-        myState = 1;
+        myState = 0;
         timer = 0;
+
       }
 
   }
