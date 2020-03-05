@@ -3,7 +3,7 @@ var timer = 0 ;
 var gif;
 
 function preload(){
-  gif = loadGif('giphybrain1.webp');
+  gif = loadGif('assets/giphybrain1.webp');
   //sound = loadSound('');
 }
 
