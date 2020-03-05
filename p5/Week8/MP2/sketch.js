@@ -24,7 +24,7 @@ function draw() {
     text("This is your Brain on House", 500, 500);
     textAlign(CENTER, CENTER);
     textSize(28);
-    image(gif, 250, 250);
+    kick.play()
 
 
     timer++;
