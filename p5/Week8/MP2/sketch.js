@@ -1,12 +1,11 @@
 var myState = 0 ;
 var timer = 0 ;
-var kick;
-var clap;
+var kick, clap;
 
 function preload(){
   //gif = loadGif('assets/giphybrain1.webp');
-  kick = loadSound('assets/kick1.wav');
-  clap = loadSound('kickclap1.wav')
+  kick = loadSound('assets/kick1.mp3');
+  clap = loadSound('assets/kickclap1.mp3');
   kick.loop();
   kick.stop();
   clap.loop();
@@ -74,29 +73,19 @@ function draw() {
     textSize(28)
     break ;
 
-    case 5:
-    background(random(0,255),random(0,0),random(0,255));
-    fill('white')
-    text("House music Is a feeling!", 500, 500);
-    textAlign(CENTER, CENTER);
-    textSize(28)
-    break ;
   }
 
-}
 
 function mouseReleased() {
-  myState = myState + 1;
-  if (myState > 6) {
-    myState = 0;
+  if (myState == 0) {
+    myState = 1 ;
   }
-
-  song1.pause();
-  song2.pause();
-  song3.pause();
-
 }
+  if (myState == 1) {
+    myState = 2 ;
+  }
+}
+  if (myState == 2) {
+    myState = 3 ;
 
-function touchStarted() {
-  getAudioContext().resume();
 }
