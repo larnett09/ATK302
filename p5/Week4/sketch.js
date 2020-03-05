@@ -4,7 +4,7 @@ var eprompic;
 var tsurudafont;
 var epromfont;
 var flumefont;
-//var tsurudasong;
+var tsurudasong;
 //var flumesong;
 //var epromsong;
 //var slider;
@@ -24,7 +24,7 @@ function setup() {
   epromfont = loadFont("assets/epromf.ttf");
   flumefont = loadFont("assets/flumef.ttf");
 
-  //tsurudasong = loadSound("assets/tsurudafubar.mp3");
+  tsurudasong = loadSound("assets/tsurudafubar.mp3");
   //flumesong = loadSound("assets/flumeleftalone.mp3");
   //epromsong = loadSound("assets/epromcenterofvip.mp3");
   slider = createSlider(300, 200, 0, 5);
