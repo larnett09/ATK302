@@ -24,8 +24,6 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background("Black");
   frameRate(1);
-
-
 }
 
 function draw() {
