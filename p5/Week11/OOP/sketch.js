@@ -1,5 +1,4 @@
-var = myCar;
-
+var myCar;
 
 function setup() {
   createCanvas(800, 800);
@@ -10,7 +9,7 @@ function draw() {
   background('blue');
 
   myCar.display() ;
-
+  myCar.drive() ;
 }
 
 function Car() {
