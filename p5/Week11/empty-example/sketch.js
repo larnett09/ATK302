@@ -1,13 +1,13 @@
-var = myCar ;
+var = myCar;
 
 
 function setup() {
-  createCanvas(800, 800) ;
-  myCar = new Car() ;
+  createCanvas(800, 800);
+  myCar = new Car();
 }
 
 function draw() {
-  background('black') ;
+  background('black');
 
 
 
@@ -15,14 +15,14 @@ function draw() {
 }
 
 function Car() {
-  this.x = 100 ;
+  this.x = 100;
 
   this.display = function() {
-    rect(this.x, 100, 100, 100) ;
+    rect(this.x, 100, 100, 100);
   }
 
   this.drive = function() {
-    this.x = this.x + 5 ;
+    this.x = this.x + 5;
   }
 
 }
