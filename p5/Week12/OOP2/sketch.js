@@ -13,7 +13,9 @@ function setup() {
   }
 
 
-  frogPos = createVector(width / 2, height - 80);
+  frogPos = createVector(400, height - 100);
+
+  textAlign(CENTER)
   rectMode(CENTER);
   ellipseMode(CENTER);
 }
@@ -22,12 +24,11 @@ function draw() {
 
   switch (myState) {
 
-    case 0: // splash screen
-      // welcome to my game, click to start
-      background('red');
+    case 0:
+      background('black');
       fill('white');
-      text("welcome to my game! click!", 100, 100);
-      text("YAY", 100, 200);
+      textSize(24)
+      text("welcome to bugeater! click!", width/2, height/2);
       break;
 
     case 1: // the game state
@@ -42,7 +43,7 @@ function draw() {
     case 2: // the win state
       background('green');
       fill('white');
-      text("YOU WON!!!", 100, 100);
+      text("WINNER WINNER CHICKEN DINNER!!!", 100, 100);
       break;
 
     case 3: // the lose state
