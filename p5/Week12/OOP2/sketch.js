@@ -35,7 +35,7 @@ function draw() {
     case 1: // the game state
       game() ;
       timer++ ;
-      if (timer>600) {
+      if (timer>1000) {
         myState = 3 ;
         timer = 0 ;
       }
@@ -67,7 +67,7 @@ function mouseReleased() {
 
   //  for (var i = 0; i < maxCars; i++) {
   //    cars.push(new Car()) ;
-    }
+//  }
     break ;
 
     case 3: // the lose myState
@@ -76,7 +76,7 @@ function mouseReleased() {
 
     //or (var i = 0; i < maxCars; i++) {
     //  cars.push(new Car()) ;
-    }
+  //  }
     break ;
 
   }
