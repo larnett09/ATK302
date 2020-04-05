@@ -119,7 +119,7 @@ function checkForKeys() {
 function resetTheGame() {
   cars = [] ;
   // spawn cars!!!
-  for (var i = 0; i < 40; i++) {
+  for (var i = 0; i < 10; i++) {
     cars.push(new Car());
   }
   timer = 0 ;
