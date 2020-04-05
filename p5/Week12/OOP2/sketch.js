@@ -16,8 +16,8 @@ function setup() {
   frogPos = createVector(400, height - 100);
 
   textAlign(CENTER)
-  rectMode(CENTER);
-  ellipseMode(CENTER);
+  //rectMode(CENTER);
+  //ellipseMode(CENTER);
 }
 
 function draw() {
@@ -43,13 +43,13 @@ function draw() {
     case 2: // the win state
       background('green');
       fill('white');
-      text("WINNER WINNER CHICKEN DINNER!!!", 100, 100);
+      text("WINNER WINNER CHICKEN DINNER!!!", width/2, height/2);
       break;
 
     case 3: // the lose state
       background('blue');
       fill('white');
-      text("You LOST!", 100, 100);
+      text("You LOST!", width/2, height/2);
       break;
   }
 }
@@ -130,6 +130,7 @@ function game() {
     cars[i].drive();
     if (cars[i].pos.dist(frogPos) < 50) {
       cars.splice(i, 1);
+
     }
   }
 
