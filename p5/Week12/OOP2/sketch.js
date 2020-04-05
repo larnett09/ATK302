@@ -1,19 +1,20 @@
-var cars = [];
-var frogPos;
+var cars = [] ;
+var frogPos ;
 var myState = 0;
 var timer = 0 ;
+var maxCars = 10 ;
 
 function setup() {
 
-  createCanvas(800, 800);
+  createCanvas(800, 800) ;
 
   // spawn cars!!!
   for (var i = 0; i < 5; i++) {
-    cars.push(new Car());
+    cars.push(new Car()) ;
   }
 
 
-  frogPos = createVector(400, height - 100);
+  frogPos = createVector(400, height - 100) ;
 
   textAlign(CENTER)
   //rectMode(CENTER);
@@ -25,14 +26,14 @@ function draw() {
   switch (myState) {
 
     case 0:
-      background('black');
-      fill('white');
+      background('black') ;
+      fill('white') ;
       textSize(24)
-      text("welcome to bugeater! click!", width/2, height/2);
+      text("welcome to bugeater! click!", width/2, height/2) ;
       break;
 
     case 1: // the game state
-      game();
+      game() ;
       timer++ ;
       if (timer>600) {
         myState = 3 ;
@@ -63,11 +64,19 @@ function mouseReleased() {
     case 2: // the win state!
     resetTheGame() ;
     myState = 0 ;
+
+  //  for (var i = 0; i < maxCars; i++) {
+  //    cars.push(new Car()) ;
+    }
     break ;
 
     case 3: // the lose myState
     resetTheGame() ;
     myState = 0 ;
+
+    //or (var i = 0; i < maxCars; i++) {
+    //  cars.push(new Car()) ;
+    }
     break ;
 
   }
