@@ -19,7 +19,7 @@ function draw() {
 
   for (var i = 0 ; i < cars.length; i++) {
     cars[i].display() ;
-    cars[i].display() ;
+    cars[i].drive() ;
   }
 
   fill('green') ;
