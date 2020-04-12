@@ -22,6 +22,7 @@ function setup() {
   imageMode(CENTER);
   frog = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/frog.png');
   fly = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/fly.png')
+  loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/gamebackground.jpg')
 }
 
 function draw() {
@@ -32,7 +33,7 @@ function draw() {
       background('black') ;
       fill('white') ;
       textSize(24)
-      text("welcome to bugeater! click!", width/2, height/2) ;
+      text("Welcome to Bugeater! EAT BUGS! Click to Start!", width/2, height/2) ;
       break;
 
     case 1: // the game state
