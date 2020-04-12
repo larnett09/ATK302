@@ -46,11 +46,12 @@ function draw() {
     case 1: // the game state
       image(bg, 400, 400, 800, 800) ;
       game() ;
-      buzz.play() ;
+      buzz.loop() ;
       timer++ ;
       if (timer>1000) {
         myState = 3 ;
         timer = 0 ;
+        buzz.stop();
       }
       break;
 
