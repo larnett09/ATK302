@@ -6,6 +6,12 @@ var maxCars = 20 ;
 var frog ;
 var fly ;
 var bg ;
+var buzz ;
+
+function preLoad() {
+  buzz = loadSound('https://larnett09.github.io/ATK302/p5/Week13/assets/buzz.wav')
+}
+
 function setup() {
 
   createCanvas(800, 800) ;
@@ -40,6 +46,7 @@ function draw() {
     case 1: // the game state
       image(bg, 400, 400, 800, 800) ;
       game() ;
+      buzz.play() ;
       timer++ ;
       if (timer>1000) {
         myState = 3 ;
