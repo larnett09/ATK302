@@ -8,8 +8,8 @@ var fly ;
 var bg ;
 var buzz ;
 
-function preLoad() {
-  buzz = loadSound('/assets/buzz.wav') ;
+function preload() {
+  buzz = loadSound('https://larnett09.github.io/ATK302/p5/Week13/assets/buzz.mp3') ;
 }
 
 function setup() {
