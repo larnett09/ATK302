@@ -2,8 +2,8 @@ var cars = [] ;
 var frogPos ;
 var myState = 0;
 var timer = 0 ;
-var maxCars = 10 ;
-
+var maxCars = 20 ;
+var frog ;
 function setup() {
 
   createCanvas(800, 800) ;
@@ -17,8 +17,8 @@ function setup() {
   frogPos = createVector(400, height - 100) ;
 
   textAlign(CENTER)
-  //rectMode(CENTER);
-  //ellipseMode(CENTER);
+  imageMode(CENTER);
+  frog = loadImage('assets/frog.png')
 }
 
 function draw() {
@@ -143,7 +143,8 @@ function game() {
   }
 
   // draw the frog
-  fill('green');
-  ellipse(frogPos.x, frogPos.y, 60, 60);
-  checkForKeys();
+  //fill('green');
+  //ellipse(frogPos.x, frogPos.y, 60, 60);
+  image(frog, frogPos.x, frogPos.y) ;
+  checkForKeys() ;
 }
