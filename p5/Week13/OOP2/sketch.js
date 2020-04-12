@@ -55,8 +55,8 @@ function draw() {
 
     case 3: // the lose state
       image(bg, 400, 400, 800, 800)
-      fill('white');
-      text("You LOST!", width/2, height/2);
+      fill('black');
+      text("YOU LOST!", width/2, height/2);
       break;
   }
 }
