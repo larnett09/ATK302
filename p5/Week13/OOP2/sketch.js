@@ -46,7 +46,7 @@ function draw() {
     case 1: // the game state
       image(bg, 400, 400, 800, 800) ;
       game() ;
-      buzz.loop() ;
+      buzz.play() ;
       timer++ ;
       if (timer>1000) {
         myState = 3 ;
@@ -161,4 +161,10 @@ function game() {
   //ellipse(frogPos.x, frogPos.y, 60, 60);
   image(frog, frogPos.x, frogPos.y) ;
   checkForKeys() ;
+}
+
+
+function touchStarted() {
+  getAudioContext().resume() ;
+
 }
