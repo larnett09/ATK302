@@ -19,7 +19,7 @@ function setup() {
 
   textAlign(CENTER);
   imageMode(CENTER);
-  frog = loadImage('https://larnett09.github.io/assets/frog.png');
+  frog = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/frog.png');
 }
 
 function draw() {
