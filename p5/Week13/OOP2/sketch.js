@@ -48,21 +48,22 @@ function draw() {
       game() ;
       buzz.loop() ;
       timer++ ;
-      if (timer>1000) {
+      if (timer>700) {
         myState = 3 ;
         timer = 0 ;
-        buzz.stop();
       }
       break;
 
     case 2: // the win state
       image(bg, 400, 400, 800, 800) ;
+      buzz.stop();
       fill('black') ;
       text("WINNER WINNER FLIES FOR DINNER!!!", width/2, height/2);
       break;
 
     case 3: // the lose state
       image(bg, 400, 400, 800, 800)
+      buzz.stop();
       fill('black');
       text("YOU LOST!", width/2, height/2);
       break;
