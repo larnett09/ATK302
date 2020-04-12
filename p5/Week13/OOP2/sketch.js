@@ -9,7 +9,7 @@ var bg ;
 var buzz ;
 
 function preLoad() {
-  buzz = loadSound('https://larnett09.github.io/ATK302/p5/Week13/assets/buzz.wav') ;
+  buzz = loadSound('/assets/buzz.wav') ;
 }
 
 function setup() {
