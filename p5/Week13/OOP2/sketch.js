@@ -50,7 +50,7 @@ function draw() {
     case 2: // the win state
       image(bg, 400, 400, 800, 800) ;
       fill('black') ;
-      text("WINNER WINNER CHICKEN DINNER!!!", width/2, height/2);
+      text("WINNER WINNER FLIES FOR DINNER!!!", width/2, height/2);
       break;
 
     case 3: // the lose state
