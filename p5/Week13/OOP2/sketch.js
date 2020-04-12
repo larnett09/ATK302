@@ -18,11 +18,12 @@ function setup() {
 
   frogPos = createVector(400, height - 100) ;
 
-  textAlign(CENTER);
-  imageMode(CENTER);
-  frog = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/frog.png');
-  fly = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/fly.png');
-  bg = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/gamebackground.jpg');
+  textAlign(CENTER) ;
+  imageMode(CENTER) ;
+  frog = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/frog.png') ;
+  fly = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/fly.png') ;
+  bg = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/gamebackground.jpg') ;
+
 }
 
 function draw() {
@@ -47,13 +48,13 @@ function draw() {
       break;
 
     case 2: // the win state
-      background('green');
-      fill('white');
+      image(bg, 400, 400, 800, 800) ;
+      fill('black') ;
       text("WINNER WINNER CHICKEN DINNER!!!", width/2, height/2);
       break;
 
     case 3: // the lose state
-      background('blue');
+      image(bg, 400, 400, 800, 800)
       fill('white');
       text("You LOST!", width/2, height/2);
       break;
