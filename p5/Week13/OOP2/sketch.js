@@ -5,7 +5,7 @@ var timer = 0 ;
 var maxCars = 20 ;
 var frog ;
 var fly ;
-
+var bg ;
 function setup() {
 
   createCanvas(800, 800) ;
@@ -21,8 +21,8 @@ function setup() {
   textAlign(CENTER);
   imageMode(CENTER);
   frog = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/frog.png');
-  fly = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/fly.png')
-  loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/gamebackground.jpg')
+  fly = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/fly.png');
+  bg = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/gamebackground.jpg');
 }
 
 function draw() {
@@ -30,13 +30,14 @@ function draw() {
   switch (myState) {
 
     case 0:
-      background('black') ;
-      fill('white') ;
-      textSize(24)
+      image(bg, 400, 400, 800, 800) ;
+      fill('black') ;
+      textSize(24) ;
       text("Welcome to Bugeater! EAT BUGS! Click to Start!", width/2, height/2) ;
       break;
 
     case 1: // the game state
+      image(bg, 400, 400, 800, 800) ;
       game() ;
       timer++ ;
       if (timer>1000) {
