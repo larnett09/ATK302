@@ -4,6 +4,7 @@ var myState = 0;
 var timer = 0 ;
 var maxCars = 20 ;
 var frog ;
+var fly ;
 
 function setup() {
 
@@ -94,8 +95,9 @@ function Car() {
 
   //methods
   this.display = function() {
-    fill(this.r, this.g, this.b) ;
-    rect(this.pos.x, this.pos.y, 30, 30) ;
+    //fill(this.r, this.g, this.b) ;
+    //rect(this.pos.x, this.pos.y, 30, 30) ;
+    image(fly, this.posx, this.pos.y, 50, 50);
   }
 
   this.drive = function() {
