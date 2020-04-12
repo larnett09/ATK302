@@ -16,9 +16,9 @@ function setup() {
 
   frogPos = createVector(400, height - 100) ;
 
-  textAlign(CENTER)
+  textAlign(CENTER);
   imageMode(CENTER);
-  frog = loadImage('assets/frog.png')
+  frog = loadImage('assets/frog.png');
 }
 
 function draw() {
