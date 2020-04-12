@@ -21,6 +21,7 @@ function setup() {
   textAlign(CENTER);
   imageMode(CENTER);
   frog = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/frog.png');
+  fly = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/fly.png')
 }
 
 function draw() {
@@ -97,7 +98,7 @@ function Car() {
   this.display = function() {
     //fill(this.r, this.g, this.b) ;
     //rect(this.pos.x, this.pos.y, 30, 30) ;
-    image(fly, this.posx, this.pos.y, 50, 50);
+    image(fly, this.pos.x, this.pos.y, 50, 50);
   }
 
   this.drive = function() {
