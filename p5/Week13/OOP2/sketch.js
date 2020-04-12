@@ -4,6 +4,7 @@ var myState = 0;
 var timer = 0 ;
 var maxCars = 20 ;
 var frog ;
+
 function setup() {
 
   createCanvas(800, 800) ;
@@ -18,7 +19,7 @@ function setup() {
 
   textAlign(CENTER);
   imageMode(CENTER);
-  frog = loadImage('assets/frog.png');
+  frog = loadImage('/assets/frog.png');
 }
 
 function draw() {
