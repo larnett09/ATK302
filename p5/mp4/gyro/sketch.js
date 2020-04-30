@@ -12,6 +12,7 @@ var z = 0;
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
+  background(random(255), random(255), random(255));
 
   // initialize accelerometer variables
   alpha = 0;
@@ -49,7 +50,7 @@ function draw() {
   // Just a bunch of text commands to display data coming in from addEventListeners
   //textAlign(LEFT);
   //textSize(20);
-  fill('white');
+  //fill('white');
   //text("orientation data:", 25, 25);
   //textSize(15);
   //text("alpha: " + alpha, 25, 50);
@@ -58,14 +59,14 @@ function draw() {
   //textSize(20);
   //text("acceleration data:", 25, 125);
   //textSize(15);
-  text("x = " + x.toFixed(2), 25, 150); // .toFixed means just show (x) decimal places
-  text("y = " + y.toFixed(2), 25, 170);
-  text("z = " + z.toFixed(4), 25, 190);
+  //text("x = " + x.toFixed(2), 25, 150); // .toFixed means just show (x) decimal places
+  //text("y = " + y.toFixed(2), 25, 170);
+  //text("z = " + z.toFixed(4), 25, 190);
 
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill(random(255), random(255), random(255));
   noStroke();
-  textSize(100);
+  textSize(20);
   textAlign(CENTER);
   text("ALL HAIL THE HYPNOTOAD", width / 2, height / 2);
 
