@@ -36,8 +36,6 @@ function setup() {
     cars.push(new Car()) ;
   }
 
-  frogPos = createVector(400, height - 100) ;
-
 
   textAlign(CENTER) ;
   imageMode(CENTER) ;
@@ -47,7 +45,7 @@ function setup() {
 }
 
 function draw() {
-  background('black'); //
+  background('white'); //
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -61,16 +59,15 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-  image(bunnyImage, 0, 0, 500, 500);
+  image(frog.png, 0, 0, 500, 500);
   //  	rect(0, 0, 100, 100) ;
   pop();
-
 
   // DECORATIONS
   // Just a bunch of text commands to display data coming in from addEventListeners
   textAlign(LEFT);
   textSize(20);
-  fill('white');
+  fill('black');
   text("orientation data:", 25, 25);
   textSize(15);
   text("alpha: " + alpha, 25, 50);
@@ -84,11 +81,11 @@ function draw() {
   text("z = " + z.toFixed(4), 25, 190);
 
   // MORE DECORATIONS - write that pretty ATK type on top.
-  fill('white');
+  fill('black');
   noStroke();
-  textSize(300);
+  textSize(100);
   textAlign(CENTER);
-  text("atk", width / 2, height / 2);
+  text("flies", width / 2, height / 2);
 
   switch (myState) {
 
