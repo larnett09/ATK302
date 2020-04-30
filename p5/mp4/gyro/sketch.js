@@ -26,7 +26,7 @@ function setup() {
 
 function draw() {
 
-  fill(random(255), random(255), random(255));; //
+  fill('black');
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -49,7 +49,7 @@ function draw() {
   // Just a bunch of text commands to display data coming in from addEventListeners
   //textAlign(LEFT);
   //textSize(20);
-  //fill('black');
+  fill('white');
   //text("orientation data:", 25, 25);
   //textSize(15);
   //text("alpha: " + alpha, 25, 50);
@@ -58,9 +58,9 @@ function draw() {
   //textSize(20);
   //text("acceleration data:", 25, 125);
   //textSize(15);
-  //text("x = " + x.toFixed(2), 25, 150); // .toFixed means just show (x) decimal places
-  //text("y = " + y.toFixed(2), 25, 170);
-  //text("z = " + z.toFixed(4), 25, 190);
+  text("x = " + x.toFixed(2), 25, 150); // .toFixed means just show (x) decimal places
+  text("y = " + y.toFixed(2), 25, 170);
+  text("z = " + z.toFixed(4), 25, 190);
 
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill(random(255), random(255), random(255));
