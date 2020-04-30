@@ -7,7 +7,6 @@ var frog ;
 var fly ;
 var bg ;
 var alpha, beta, gamma; // orientation data
-var bunnyImage;
 var xPosition = 0;
 var yPosition = 0;
 var x = 0; // acceleration data
@@ -28,7 +27,7 @@ function setup() {
    beta = 0;
    gamma = 0;
  
-   bunnyImage = loadImage("assets/.jpg");
+   frog = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/frog.png') ;
    imageMode(CENTER);
    rectMode(CENTER);
 
@@ -42,7 +41,6 @@ function setup() {
 
   textAlign(CENTER) ;
   imageMode(CENTER) ;
-  frog = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/frog.png') ;
   fly = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/fly.png') ;
   bg = loadImage('https://larnett09.github.io/ATK302/p5/Week13/assets/gamebackground.jpg') ;
 
@@ -104,7 +102,6 @@ function draw() {
     case 1: // the game state
       image(bg, 400, 400, 800, 800) ;
       game() ;
-      buzz.loop() ;
       timer++ ;
       if (timer>700) {
         myState = 3 ;
@@ -114,14 +111,12 @@ function draw() {
 
     case 2: // the win state
       image(bg, 400, 400, 800, 800) ;
-      buzz.stop();
       fill('black') ;
       text("WINNER WINNER FLIES FOR DINNER!!!", width/2, height/2);
       break;
 
     case 3: // the lose state
       image(bg, 400, 400, 800, 800)
-      buzz.stop();
       fill('black');
       text("YOU LOST!", width/2, height/2);
       break;
@@ -182,13 +177,13 @@ function Car() {
 }
 
 
-function checkForKeys() {
-  if (keyIsDown(LEFT_ARROW)) frogPos.x = frogPos.x - 10;
-  if (keyIsDown(RIGHT_ARROW)) frogPos.x = frogPos.x + 10;
-  if (keyIsDown(UP_ARROW)) frogPos.y = frogPos.y - 10;
-  if (keyIsDown(DOWN_ARROW)) frogPos.y = frogPos.y + 10;
+//function checkForKeys() {
+//  if (keyIsDown(LEFT_ARROW)) frogPos.x = frogPos.x - 10;
+//  if (keyIsDown(RIGHT_ARROW)) frogPos.x = frogPos.x + 10;
+//  if (keyIsDown(UP_ARROW)) frogPos.y = frogPos.y - 10;
+//  if (keyIsDown(DOWN_ARROW)) frogPos.y = frogPos.y + 10;
 
-}
+//}
 
 function resetTheGame() {
   cars = [] ;
