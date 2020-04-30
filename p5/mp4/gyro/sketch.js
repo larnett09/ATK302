@@ -2,7 +2,7 @@
 Make sure you turn on orientation lock on your iPhone or Android device. */
 
 var alpha, beta, gamma; // orientation data
-var bunnyImage;
+var frogImage;
 var xPosition = 0;
 var yPosition = 0;
 var x = 0; // acceleration data
@@ -18,7 +18,7 @@ function setup() {
   beta = 0;
   gamma = 0;
 
-  bunnyImage = loadImage("assets/.jpg");
+  frogImage = loadImage("assets/hypnotoad.png");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -26,7 +26,7 @@ function setup() {
 
 function draw() {
 
-  background('black'); //
+  fill(random(255), random(255), random(255));; //
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -40,7 +40,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-  image(bunnyImage, 0, 0, 500, 500);
+  image(frogImage, 0, 0, 500, 500);
   //  	rect(0, 0, 100, 100) ;
   pop();
 
@@ -63,11 +63,11 @@ function draw() {
   text("z = " + z.toFixed(4), 25, 190);
 
   // MORE DECORATIONS - write that pretty ATK type on top.
-  fill('white');
+  fill(random(255), random(255), random(255));
   noStroke();
-  textSize(300);
+  textSize(100);
   textAlign(CENTER);
-  text("atk", width / 2, height / 2);
+  text("ALL HAIL THE HYPNOTOAD", width / 2, height / 2);
 
 }
 
