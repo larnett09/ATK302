@@ -14,9 +14,7 @@ var y = 0;
 var z = 0;
 
 
-function preload() {
-  
-}
+f
 
 function setup() {
 

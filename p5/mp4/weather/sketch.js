@@ -16,7 +16,7 @@ function preload() {
 
 function setup() {
   createCanvas(400, 400) ;
-  image(bg, 400, 400, 400, 400) ;  
+  image(bg, 800, 800,) ;  
   // HERE Is the call to get the weather. PLEASE PUT YOUR OWN ID IN HERE!!!
   // MINE WILL STOP WORKING IF EVERYONE USES IT!!!
 
