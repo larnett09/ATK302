@@ -15,8 +15,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400, 400) ;
-  image(bg, 800, 800,) ;  
+  createCanvas(800, 800) ;
+  imageMode(CENTER) ; 
+  image(bg, 800, 800, 800, 800) ; 
+  
   // HERE Is the call to get the weather. PLEASE PUT YOUR OWN ID IN HERE!!!
   // MINE WILL STOP WORKING IF EVERYONE USES IT!!!
 
