@@ -42,7 +42,7 @@ function draw() {
   // // iterate through the namesArray and display the objects!
   for (let i = 0; i < namesArray.length; i++) {
     namesArray[i].display();
-    namesArray[i].drive();
+     namesArray[i].drive();
   }
 
 }
@@ -62,7 +62,7 @@ function Circle(mydoing) {
   }
 
   this.drive = function() {
-    this.pos.x = this.pos.x =this.vel ;
+    this.pos.x = this.pos.x + this.vel ;
     if (this.pos.x > width) this.pos.x = -20 ;
   }
 
