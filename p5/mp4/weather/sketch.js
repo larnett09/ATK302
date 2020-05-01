@@ -7,6 +7,7 @@ var sun ;
 var cloud ;
 var x = 0 ;
 var ws = 0 ;
+var temperature = 0 ;
 
 function preload() {
   bg = loadImage('https://larnett09.github.io/ATK302/p5/mp4/weather/assets/bg.png') ;
@@ -16,9 +17,9 @@ function preload() {
 
 function setup() {
   createCanvas(400, 400) ;
-  imageMode(CORNER) ; 
-  createImage(bg, 400, 400) ; 
-  
+  background('black')
+  //createImage(bg, 0, 400) ; 
+   
   // HERE Is the call to get the weather. PLEASE PUT YOUR OWN ID IN HERE!!!
   // MINE WILL STOP WORKING IF EVERYONE USES IT!!!
 
@@ -34,6 +35,7 @@ function gotData(data) {
   weather = data ;
   console.log(data) ; // for debugging purposes, print out the JSON data when we get it.
   ws = weather.wind.speed ;  
+  temperature = weather.main.temp ;
 }
 
 
@@ -46,17 +48,22 @@ function draw() {
       break;
 
     case 1:
-    image(bg, 400, 400, 400, 400) ;    
-    fill('black') ;
+    image(bg, 0, 400, 800, 0) ;  
+    imageMode(CENTER) ;  
+    fill('white') ;
     text("Lovely Weather in Vancouver", 20, 20) ;
 // parse the weather object and put some text or images using at least 3 different weather data!
-    text("The Current Forcast is"+ weather.weather.description, 20, 40);
-    text("The Temperature is"+ weather.main.temp, 20, 60);
-    text("The Humidity is"+ weather.main.humidity, 20, 80);
-    text("The Windspeed is"+ weather.wind.speed, 20, 100);
+    text("The Temperature is"+ weather.main.temp, 20, 40);
+    text("The Humidity is"+ weather.main.humidity, 20, 60);
+    text("The Windspeed is"+ weather.wind.speed, 20, 80);
     image(cloud, x, 250, 200, 100);
     x = x + ws/2 ;
     if (x > width) x = 0 ;
+
+    image(sun, width-10, height-10, 350, 390) ;
+    var tmp = 0 ;
+    tmp = map(temperature, -10, 90, 2, height-10) ;
+
 
     break;
 
