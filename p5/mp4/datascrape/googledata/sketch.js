@@ -42,6 +42,7 @@ function draw() {
   // // iterate through the namesArray and display the objects!
   for (let i = 0; i < namesArray.length; i++) {
     namesArray[i].display();
+    namesArray[i].drive();
   }
 
 }
@@ -50,16 +51,19 @@ function draw() {
 // my circle class
 function Circle(mydoing) {
   this.pos = createVector(random(width), random(height));
-  this.name = mydoing;
-
+  this.doing = mydoing;
+  this.vel = random(3) ;
+  this.mySize = random(10, 40);
 
   this.display = function() {
-  
-  elipse(this.pos.x, this.pos.y, 50, 50) ;
+  textSize(this.mySize) ;
   fill('green') ;
   text(this.doing, this.pos.x, this.pos.y) ;
+  }
 
-
+  this.drive = function() {
+    this.pos.x = this.pos.x =this.vel ;
+    if (this.pos.x > width) this.pos.x = -20 ;
   }
 
 }
